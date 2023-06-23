@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover and display</title>
+    <style type="text/css">
+    
+        #mainid li ul li{display: none;}
+        #mainid li:hover ul li {
+            display: block;
+        }
+        #main li:hover ul li ul li{
+            display: none;
+        }
+        #main li ul li:hover ul li{
+            display: block;
+        }
+       
+
+      
+
+        #main li ul li:hover ul li ul li {
+            display: none;
+        }
+
+        #main li ul li ul li:hover ul li {
+            display: block;}
+            
+    </style>
+</head>
+
+<body>
+
+ <ul id="mainid">
+     <li>google
+        <ul>
+            <li>Gmail
+            <ul>
+                <li>Sing Up</li>
+                <li>Sing In
+
+               <ul>
+                    <li>Sing In As Admin</li>
+                    <li>Sing In As Member</li>
+               
+                </ul>
+              </li>
+        
+            </ul>
+          </li>
+
+            <li>Youtube</li>
+            <li>GDrive</li>
+            <li>GMap</li>
+        </ul>
+     </li>
+        <li>Facebook</li>
+        <li>Microsoft
+        <ul>
+            <li>Bing</li>
+            <li>Linked In</li>
+        </ul>
+    </li>
+        <li>MSN</li>
+        <li>Amazon
+        <ul>
+            <li>AWS</li>
+            <li>Ecommerce</li>
+            <li>A-ML</li>
+        </ul>
+    </li>
+
+    </ul>
+</body>
+
+</html>
