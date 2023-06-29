@@ -28,6 +28,9 @@
             margin: 12px 12px;
             padding: 12px;
         } */
+        .R3{
+            background-color: black;
+        }
 
         .R2 {
              
@@ -48,7 +51,7 @@
         margin: 12px 12px;
     /* border: 3px solid; */
     width: 47%;
-    background-color: cadetblue;
+    background-color: rgb(77, 157, 243);
 
        }
        .R2C2{
@@ -60,16 +63,17 @@
        .R2C2R1{
         
         /* border: 3px solid; */
+
     height: 201px;
     margin: 12px 12px;
-    background-color: cadetblue;
+    background-color: rgb(145, 82, 255);
                
        }
        .R2C3R2{
-               height: 552px;
+               height: 532px;
                /* border: 3px solid; */
                margin: 12px 12px;
-               background-color: cadetblue;
+               background-color: rgb(176, 88, 249);
        }
 
        /* @media(max-width:1000px) and (min-width:100px){
@@ -78,24 +82,102 @@
             width: 97%;
         }
        } */
+       #nav{
+    display:flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+}
+#nav::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.69;
+}
+#nav ul{
+    display: flex;
+}
+#nav ul li{
+    font-size:1.3 rem ;
+    list-style: none;
+}
+#nav ul li a{
+     color: white;
+     padding: 4px 20px;
+     display: block;
+     border-radius: 20px;
+     text-decoration: none;
+}
+#nav ul li a:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    padding-top: 62px;
+    font-size: 55px;
+}
+p{
+    font-size: 19px;
+}
+#footer{
+    color: white;
+    font-size: 19px;
+    text-align: center;
+}
+img{
+    height: 796px;
+    width: 684px;
 
+}
         
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="R1">LOGO</div>
+    <div  id="nav">
+        
+        <ul>
+            <li class="item"><a>Home</a></li>
+            <li class="item"><a>Product</a></li>
+            <li class="item"><a>Services</a></li>
+            <li class="item"><a>Contact Us</a></li>
+            <li class="item"><a href="sign_log_in.html" target=”_blank”>Sign/Log IN</a></li>
+            
+        </ul>
+    </div>
         <div class="R2">
-            <div class="R2C1">side bar Navigation </div>
+            <div class="R2C1"><img src="https://1.bp.blogspot.com/-L23OLErykzo/WoPqtGgqDvI/AAAAAAAAJ5c/3UvzJru8bFYLuBApwHNyMKkkS3Qay0juQCLcBGAs/w1200-h630-p-k-no-nu/vanilla-javascript.jpg" alt=""></div>
             <div class="R2C2">
-                <div class="R2C2R1">Header/Banner</div>
-               <div class="R2C3R2">Body Area</div>
+                <div class="R2C2R1">
+                    <h1>What is vanilla javascript</h1>
+                </div>
+               <div class="R2C3R2">
+                <p>Vanilla JavaScript refers to the use of plain JavaScript without any additional libraries or frameworks. It is the term used to describe the core JavaScript language and its built-in features and functions that are available in web browsers. <br>
+                    <br>
+
+                    When you use vanilla JavaScript, you are essentially using the native capabilities of JavaScript to manipulate the Document Object Model (DOM), handle events, make AJAX requests, perform calculations, manipulate strings and arrays, and perform other tasks without relying on external libraries or frameworks like jQuery, React, Angular, or Vue.js. <br>
+                    <br>
+                    
+                    Vanilla JavaScript is widely supported by all modern web browsers, and it allows developers to have more control and flexibility over their code without the added overhead of external dependencies. It can be used to create interactive web applications, add interactivity to web pages, create animations, validate forms, and perform various other tasks. <br>
+                    <br>
+                    
+                    Using vanilla JavaScript can be beneficial in terms of performance, as it eliminates the need to load additional libraries, resulting in smaller file sizes and faster execution times. However, it may require more effort and code compared to using frameworks that provide pre-built functionalities.
+                <br>
+                <br>
+                Overall, vanilla JavaScript is the foundation of web development and provides the essential tools for building dynamic and interactive web applications.</p>
+               </div>
             </div>
                
        
         </div>
-        <div class="R3">Footer</div>
+        <div class="R3"><p id="footer">www.vanilla javascript.com</p></div>
 
     </div>
 

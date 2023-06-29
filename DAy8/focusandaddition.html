@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+</head>
+<body>
+    Select Product : <select name="" id="product">
+        <option value="" selected>select product</option>
+        <option value="450000">AC</option>
+        <option value="22000">TV</option>
+        <option value="15000">Refrigerator</option>
+        <option value="70000">Leptop</option>
+     
+    </select>   <br> 
+    <br>
+        Net Price : <input type="text" name="" id="price">
+        <br>
+        Quantity : <input type="text" name="" id="quantity">
+        <br>
+        Total Amount :<input type="text" name="" id="amount">
+
+   
+    <script>
+        var product = document.getElementById("product");
+
+        var amount = document.getElementById("amount");
+        var quantity = document.getElementById("quantity");
+
+        var price = document.getElementById("price");
+        
+        product.addEventListener("change",()=>{price.value=product.value;});
+
+        amount.addEventListener("focus",()=>{ amount.value = product.value * qunatity.value;});
+        
+    </script>
+</body>
+</html>
