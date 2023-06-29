@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET INTERVAL</title>
+</head>
+<body id="mybody">
+    <p id="p1" style="color: blueviolet;">Dhekh kya raha hai bhai</p>
+    <div class="first" id="second"></div>
+    <div class="first" id="second"></div>
+    <div class="first" id="second"></div>
+    <div class="first" id="second"></div>
+    <div class="first" id="second"></div>
+    
+</body>
+<script>
+   
+    var colors =["red","green","pink","black","orange","yellow"]
+    var mybody = document.getElementById("mybody");
+    var i=0;
+    setInterval(()=>{
+        mybody.style.backgroundColor =colors[i];
+        ++i;
+        if(i==colors.length)
+        {
+
+            i=0;
+        }
+    },1000);
+    var p1 = document.getElementById("p1")
+    var i=0;
+    var a = setInterval(()=>{ p1.style.fontSize= i+"px";
+    i=i+5;
+    if(i==50)
+    {
+        
+        clearInterval(a);
+        
+    }
+    },1000);
+
+</script>
+</html>

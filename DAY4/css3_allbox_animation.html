@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box ON Animatio</title>
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            transition: 7s;
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+            background-color: rgb(109, 89, 189);
+            text-align: center;
+        
+        }
+
+        
+        #Translatediv:hover{
+            transform: translate(100px,100px);
+            background-color: brown;
+            color: blanchedalmond;
+        }
+        #RotateDiv:hover{
+            transform: rotate(360deg);
+            background-color: chartreuse;
+            color: crimson;
+        }
+        #Rotate3DDiv:hover{
+            -webkit-transform: rotate3d(1,1,0,360deg);
+            transform: rotate3d(1,1,o,360deg);
+            background-color: rgb(147, 123, 169);
+            color: cadetblue;
+        }
+        #SkewDiv:hover{
+            transform: skew(45deg);
+            background-color: chartreuse;
+            color: bisque;
+        }
+        #ScaleDiv:hover{
+            transform: scale(1.5,0.5);
+            background-color: burlywood;
+            color: blue;
+        }
+        #OpacityDiv:hover{
+            
+            opacity:1;
+        }
+        #RGBDiv:hover{
+            background-color: rgba(128, 128, blue, 0.5);
+        }
+        #boxShadowDiv:hover{
+           box-shadow: 3px 4px  green;
+        }
+        #TextShadowDiv:hover{
+           text-shadow: 3px 9px  skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="Translatediv">Translate</div> <hr>
+    <div id="RotateDiv">Rotate</div> <hr>
+    <div id="Rotate3DDiv">Rotate 3D</div> <hr>
+    <div id="SkewDiv">Skew</div> <hr>
+    <div id="ScaleDiv">Scale</div> <hr>
+    <div id="OpacityDiv">Opacity</div> <hr>
+    <div id="RGBDiv">RGB</div> <hr>
+    <div id="boxShadowDiv">Boxshadow</div> <hr>
+    <div id="TextShadowDiv">TextShadow</div> <hr>
+</body>
+</html>
