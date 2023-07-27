@@ -240,7 +240,7 @@ height: 350px;
     margin-top: -6px;
     /* margin-left: -7.7px; */
     
-    background: url(/Imges/aboutme5.jpg) no-repeat center center/cover;
+    background: url(Imges/aboutme5.jpg) no-repeat center center/cover;
    
     /* border: 3px solid white; */
     width: 100%;
@@ -278,7 +278,7 @@ height: 350px;
 
 .portfolio{
     /* background: var(--second-bg-color); */
-    background: url(/Imges/technicalbg.webp) no-repeat center center/cover;
+    background: url(Imges/technicalbg.webp) no-repeat center center/cover;
     height: 101%;
     margin-top: -34px;
     margin-bottom: 10px;
@@ -386,7 +386,7 @@ height: 350px;
 
 .project{
     /* background: var(--second-bg-color); */
-    background: url(/Imges/projectbg.jpg) no-repeat center center/cover;
+    background: url(Imges/projectbg.jpg) no-repeat center center/cover;
     margin-top: -34px;
     /* height: 101%;
     margin-top: -34px;
@@ -502,7 +502,7 @@ height: 350px;
 
   
   .contact{
-    background: url(/Imges/contactbg.jpg)no-repeat center center/cover;
+    background: url(Imges/contactbg.jpg)no-repeat center center/cover;
   }
   .contact h2{
     margin-bottom: 3rem;
